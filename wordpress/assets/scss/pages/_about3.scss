@@ -1,0 +1,55 @@
+.about3 {
+  .business-history {
+    .business-history-content {
+      margin-right: 10%;
+      .year {
+        font-weight: 500;
+      }
+      .multi-line {
+        line-height: 25px;
+      }
+      hr {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .product-history {
+    .product-history-content {
+      margin-right: 10%;
+      padding-bottom: 100px;
+      .year {
+        font-weight: 500;
+      }
+      .multi-line {
+        line-height: 25px;
+      }
+      hr {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  @include mqdown() {
+    .business-history {
+      .business-history-content {
+        margin-right: 0;
+        .multi-line {
+          line-height: 20px;
+        }
+      }
+    }
+  
+    .product-history {
+      .product-history-content {
+        margin-right: 0;
+        padding-bottom: 160px;
+        line-height: 20px;
+        .multi-line {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

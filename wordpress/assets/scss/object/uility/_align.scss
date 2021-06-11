@@ -1,0 +1,22 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+.center-vertical {
+    text-align: center;
+    padding: 1rem 0;
+    h6 {
+        color:$primary-color;
+        margin-top: 0.5rem;
+    }
+    h2 {
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+}
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}

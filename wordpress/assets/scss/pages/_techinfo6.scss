@@ -1,0 +1,20 @@
+.techinfo6 {
+    padding-bottom: 150px;
+    .text {
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+    @include mqdown() {
+        padding-bottom: 50px;
+        .text {
+            padding-top: 30px;
+            line-height: 23px;
+            .title {
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+}

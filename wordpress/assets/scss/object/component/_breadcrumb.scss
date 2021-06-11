@@ -1,0 +1,50 @@
+.nav-breadcrumb {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 10px 0;
+
+    &__list {
+        padding-left: $paddingLg;
+        padding-right: $paddingLg;
+        margin-bottom: 0;
+    }
+
+    &__list-item {
+        display: inline;
+
+        &:not(:first-child)::before {
+            content: ">";
+            color: #2c2c2c;
+            padding: 0 2px;
+        }
+    }
+
+    &__link {
+        color: #2c2c2c;
+
+        &:hover {
+            color: #2c2c2c;
+        }
+    }
+}
+
+@include mqdown("xxl") {
+    .nav-breadcrumb {
+        &__list {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}
+
+@include mqdown('lg') {
+    .nav-breadcrumb {
+        font-size: 12px;
+        line-height: 16px;
+
+        &__list {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

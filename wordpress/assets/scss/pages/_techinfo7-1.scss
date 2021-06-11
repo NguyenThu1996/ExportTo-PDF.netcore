@@ -1,0 +1,346 @@
+#booking-form {
+    .padding-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .header-block {
+        margin: 80px 0px;
+    }
+    
+    .description {
+        font-size: 15px;
+    }
+    
+    .section-form-group {
+        border: 1px solid #707070;
+        position: relative;
+        padding: 20px;
+    
+        &__title {
+            background: #fff;
+            padding: 10px;
+            font-size: 25px;
+            color: #000;
+            position: absolute;
+            line-height: 20px;
+            top: -20px;
+            left: 20px;
+        }
+    
+        &__note {
+            font-size: 15px;
+            line-height: 3;
+    
+            &::before {
+                content: '※';
+                color: red;
+                padding-right: 2px;
+            }
+        }
+    }
+    
+    .form-border {
+        border-bottom: 1px solid #707070;
+        border-right: 1px solid #707070;
+        height: 100%;
+    }
+    
+    .form-margin {
+        margin: 20px;
+    }
+    
+    .form-line {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;;
+    }
+    
+    .form-line-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .form-line-container--head {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .form-line-label {
+        font-size: 18px;
+        margin-right: 10px;
+        color: #000;
+    }
+    
+     .required {
+        color: red;
+    }
+    
+    .form-text-inline {
+        font-size: 15px;
+        color: #2C2C2C;
+        margin: 5px 0;
+    }
+    
+    .form-input {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        border: 1px solid #707070;
+        font-size: 15px;
+    
+        &--fill {
+            width: 95%;
+        }
+    
+        &--large {
+            width: 70%;
+        }
+    
+        &--sm {
+            width: 20%;
+            min-width: 90px;
+        }
+    
+        &--md {
+            width: 50%;
+        }
+    
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #D3C9C9;
+            opacity: 1; /* Firefox */
+          }
+          
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #D3C9C9;
+          }
+          
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #D3C9C9;
+          }
+    }
+    
+    .form-note {
+        font-size: 15px;
+    }
+    
+    .form-footer {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+    
+        &__col {
+            width: 500px;
+        }
+    
+        label {
+            margin-top: 10px;
+        }
+    }
+    
+    .error {
+        color: #FF0000;
+        margin-bottom: 5px;
+    }
+    
+    .error-mb {
+        display: none;
+        margin-bottom: 10px;
+    }
+    
+    .error.error-heading {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .form-line .error {
+        font-size: 15px;
+    }
+    
+    .form-error {
+        background: #F3B3B3;
+        color: #000;
+    
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #F3B3B3;
+            opacity: 1; /* Firefox */
+          }
+          
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #F3B3B3;
+          }
+          
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #F3B3B3;
+          }
+    }
+    
+    .form-input-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .error.error-pc {
+        margin-left: 10px;
+        margin-right: 10px;
+        flex: 1;
+    }
+    
+    .pc-none {
+        display: none;
+    }
+
+    .button-primary {
+        background: $primary-color;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 40px;
+        position: relative;
+        border: 1px solid $primary-color;
+        text-align: center;
+        &:hover {
+            background: #fff;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .padding-content {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        .section-title {
+            &__text1 {
+                font-size: 12px;
+            }
+    
+            &__text2 {
+                font-size: 28px;
+            }
+        }
+    
+        .header-block {
+            margin: 20px 0;
+        }
+    
+        .description {
+            font-size: 14px;
+        }
+    
+        .section-form-group {
+            padding-top: 30px;
+            &__title {
+                font-size: 17px;
+                top: -20px;
+                text-align: center;
+                left: 50%;
+                transform: translate(-50%);
+            }
+    
+            &__title.fill {
+                min-width: 320px;
+            }
+    
+            &__note {
+                display: block;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    
+        .form-line {
+            flex-direction: column;
+        }
+    
+        .form-line-label {
+            font-size: 15px;
+        }
+    
+        .form-text-inline {
+            font-size: 14px;
+            padding: 5px;
+        }
+    
+        .form-line-container {
+            justify-content: center;
+        }
+    
+        .form-border {
+            margin-top: 5px;
+            margin-right: 0;
+        }
+    
+        .form-line-container.form-border:not(.form-mb-border) {
+            border: none;
+        }
+    
+        .form-input {
+            font-size: 12px;
+    
+            &--md, &--large, &--regular {
+                width: 95%;
+            }
+        }
+    
+        .form-mb-center {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;;
+        }
+    
+        .form-note {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .form-note--sm {
+            font-size: 12px;
+        }
+    
+        .form-footer {
+            font-size: 12px;
+            &__col {
+                width: 100%;
+            }
+        }
+        
+        .error.error-heading {
+            font-size: 17px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .form-line .error {
+            font-size: 12px;
+        }
+    
+        .error-mb {
+            display: block;
+        }
+    
+        .error-pc {
+            display: none;
+        }
+    
+        .mb-none {
+            display: none;
+        }
+    
+        .pc-none {
+            display: block;
+        }
+
+        .text-mb-center {
+            text-align: center;
+        }
+    }
+}

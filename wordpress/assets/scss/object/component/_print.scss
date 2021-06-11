@@ -1,0 +1,316 @@
+@media print {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-lg {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .col-lg-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    .col-lg-1 {
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .col-lg-2 {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-lg-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-lg-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-lg-7 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .col-lg-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .col-lg-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-lg-10 {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .col-lg-11 {
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-xl {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .col-xl-auto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    .col-xl-1 {
+        flex: 0 0 8.333333%;
+        max-width: 8.333333%;
+    }
+    .col-xl-2 {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+    .col-xl-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-xl-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-xl-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .col-xl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-xl-7 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .col-xl-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .col-xl-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-xl-10 {
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+    .col-xl-11 {
+        flex: 0 0 91.666667%;
+        max-width: 91.666667%;
+    }
+    .col-xl-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    @page {
+        size: landscape;
+        margin: 0;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+        color-adjust: exact !important;                 /*Firefox*/
+        transition: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+    }
+
+    .site-header {
+        position: static;
+    }
+
+    .main-container {
+        margin-top: 0 !important;
+    }
+
+    #pageTop {
+        display: none !important;
+    }
+
+    thead {display: table-row-group;}
+
+    .view-sp {
+        display: none !important;
+        height: 0px !important;
+    }
+      
+    .view-pc {
+        display: block !important;
+    }
+
+    /* Slider */
+    .slide-content-container, .top-page .slide-container {
+        position: static !important;
+    }
+
+    /* Job1 */
+    #job1 {
+        .recruitment-flow {
+            &__content{
+              left: 30%;
+            }
+        }
+    }
+
+    /* Job2 */
+    #job-introduce-page {
+        .job-introduce-detail {
+            &__image {
+                display: none !important;
+            }
+    
+            &__image-print {
+                display: block !important;
+                height: 380px !important;
+            }
+        }
+    
+        .job-sub-image {
+            img {
+                display: none !important;
+            }
+    
+            .job-sub-image-print {
+                display: block !important;
+                height: 145px !important;
+            }
+        }
+    }
+    
+    /* Job4 */
+    .list-album {
+        .content-image {
+        display: none !important;
+        }
+        
+        .content-image-print {
+            display: block !important;
+        }
+
+        .item-album-right, .item-album-left {
+            padding-right: 15px !important;
+            padding-left: 15px !important;
+        }
+    }
+
+    /* Booking form */
+    #booking-form {
+        .section-form-group {
+            &__title {
+                text-align: left !important;
+                left: 20px !important;
+                transform: translate(0%) !important;
+            }
+            &__note {
+                text-align: left !important;
+            }
+        }
+
+        .form-line-container {
+            justify-content: flex-end !important;
+        }
+
+        .form-mb-center {
+            justify-content: flex-start !important;
+        }
+
+        .form-note {
+            text-align: left !important;
+        }
+
+        .text-mb-center {
+            text-align: left !important;
+        }
+
+        .form-border {
+            border-bottom: 1px solid #707070 !important;
+            border-right: 1px solid #707070 !important;
+        }
+        
+        .form-line {
+            display: flex !important;
+            flex-direction: row !important;
+            margin-bottom: 10px !important;
+        }
+
+        .form-line-container--head {
+            text-align: left !important;
+        }
+
+        .form-line-label {
+            margin-right: 10px !important;
+        }
+
+        .form-input--large {
+            width: 70% !important;
+        }
+
+        .form-input--md {
+            width: 50% !important;
+        }
+
+        .form-input--regular {
+            width: 40% !important;
+        }
+
+        .form-footer {
+            font-size: 15px !important;
+            &__col {
+                width: 500px !important;
+            }
+        }
+
+        .pc-none {
+            display: none !important;
+        }
+
+        .mb-none {
+            display: block !important;
+        }
+
+        .error-mb {
+            display: none !important;
+        }
+
+        .error-pc {
+            display: block !important;
+        }
+
+        .error.error-heading {
+            text-align: left !important;
+        }
+    }
+
+    /* TechInfo1 */
+    .techinfo1-content {
+        .main-table{
+            font-size: 15px !important;
+            tr{
+                td{
+                    white-space: normal !important;
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family:  "ヒラギノ角ゴ Pro W3", HiraKakuPro-W3, "游ゴシック Medium", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: $text-color;
+    text-align: left;
+    background-color: $white-color;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    
+    .text-heading {
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+body.lang-en {
+    font-family: Arial, Helvetica, "游ゴシック Medium", "Yu Gothic Medium","游ゴシック体","YuGothic","ヒラギノ角ゴ Pro W3", HiraKakuPro-W3, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    .slide-text {
+        font-family: 'Libre Baskerville', serif;
+    }
+    .section-title, .text-heading {
+        font-family: Arial, Helvetica, "游ゴシック Medium", "Yu Gothic Medium","游ゴシック体","YuGothic","ヒラギノ角ゴ Pro W3", HiraKakuPro-W3, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+    }
+}
+
+body.lang-zh {
+    font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+    .section-title, .text-heading {
+        font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media screen {
+    .fadeInUp {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        -webkit-transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+        transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+    }
+    
+    .fadeInUp.animated {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+
+/*button Top*/
+#pageTop {
+    position: fixed;
+    bottom: 0;
+    right: 9px;
+    display: none;
+    z-index: 9999;
+}
+
+#pageTop a {
+    text-indent: -9000px;
+    display: block;
+    width: 41px;
+    height: 41px;
+    background: url("/assets/images/common/pageTop.png") no-repeat 0 0;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity=70);
+    cursor: pointer;
+}
+
+/*button to form contact*/
+#btnContact {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    display: none;
+    z-index: 9999;
+}
+
+#btnContact a {
+    text-indent: -9000px;
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: url("/assets/images/common/footer-mail.png");
+    cursor: pointer;
+}
+
+.bg-c-grey {
+    background-color: #f2f2f2;
+}
+
+.line-height-1dot5rem {
+    line-height: 1.5rem;
+}
+.display-none {
+    display: none;
+}
+.border-bottom-none {
+    border-bottom: none !important;
+}
+.layout-album {
+    position: relative;
+    color: white;
+}
+.layout-centered {
+    position: absolute;
+    top: 0;
+    height: 18%;
+    width: 100%;
+    background-color: $primary-color;
+    font-size: 2vh;
+}
+
+.main-container {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.main-content {
+    padding-left: $paddingLg;
+    padding-right: $paddingLg;
+    margin: 0 auto;
+}
+
+.available-scroll {
+    display: none;
+    position: absolute;
+    background-image: url('../images/common/available_scroll.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 104px;
+    height: 108px;
+    z-index: 99;
+    left: 95px;
+    top: 45%;
+}
+
+@include mqdown("xxl") {
+    .main-content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@include mq('lg') {
+    #btnContact a {
+        display: none;
+    }
+
+    #pageTop a {
+        display: block;
+    }
+}
+
+@include mqdown("lg") {
+    .main-container {
+        margin-top: 70px;
+    }
+
+    .main-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #btnContact a {
+        display: block;
+    }
+    #pageTop a {
+        display: none;
+    }
+
+    .available-scroll{
+        display: block;
+    }
+}
+
+@include mqdown('sm') {
+    body {
+        font-size: 14px;
+    }
+}
+

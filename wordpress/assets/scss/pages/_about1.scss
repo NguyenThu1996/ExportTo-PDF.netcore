@@ -1,0 +1,87 @@
+.about1 {
+  .view-text-pc {
+    display: flex;
+    flex-direction:row;
+    padding-top: 10px;
+    .position {
+      letter-spacing: 0.03em;
+    }
+    .name {
+      font-size: 23px;
+      letter-spacing: 0.18em;
+      text-align: right;
+      margin-left: 20px;
+    }
+  }
+  .view-text-pc-en {
+    padding-top: 10px;
+    .position {
+      font-size: 15px;
+      line-height: 22px;
+    }
+    .name {
+      font-size: 23px;
+      line-height: 23px;
+    }
+    p{
+      margin-bottom: 0.5rem;
+    }
+  }
+  .view-text-sp {
+    display: none;
+  } 
+  .view-text-sp-en {
+    display: none;
+  }
+  .image-footer {
+    img {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  @include mqdown('lg') {
+    .message-image {
+      padding-top: 100px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+      align-items: center;
+      .image-content {
+        margin-left: 15px;
+      }
+      .view-text-pc {
+        display: none;
+      }
+      .view-text-pc-en {
+        display: none;
+      }
+      .view-text-sp {
+        display: flex;
+        .position {
+          letter-spacing: 0.03em;
+        }
+        .name {
+          padding-top: 10px;
+          font-size: 20px;
+          letter-spacing: 0.18em;
+          font-weight: 600;
+        }
+      } 
+      .view-text-sp-en {
+        display: flex;
+        .name {
+          padding-top: 10px;
+          font-size: 17px;
+          font-weight: 600;
+        }
+      } 
+    }
+  }
+  @include mqdown('sm') {
+    .image-content {
+      img {
+        width: 160px;
+      }
+    }
+  }
+}

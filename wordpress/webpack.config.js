@@ -1,0 +1,81 @@
+const path = require("path");
+
+// include the js minification plugin
+const TerserJSPlugin = require('terser-webpack-plugin');
+
+// include the css extraction and minification plugins
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
+module.exports = {
+    context: __dirname,
+    entry: [
+        "./assets/js/app.js",
+        "./assets/scss/app.scss",
+    ],
+    target: 'es5',
+    output: {
+        filename: "app.min.js",
+        path: path.resolve(__dirname, "assets", "dist"),
+        publicPath: ""
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: [/node_modules/],
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["babel-preset-env"]
+                    }
+                }
+            },
+            {
+                test: /\.scss$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+            },
+            {
+                test: /\.(png|svg|jpe?g|gif)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            outputPath: 'images/',
+                            name: "[name].[ext]"
+                        }
+                    }
+                ]
+            },
+
+            {
+                test: /\.(eot|woff|woff2|otf|ttf|ttc)$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            outputPath: 'fonts/',
+                            name: "[name].[ext]"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    plugins: [
+        // extract css into dedicated file
+        new MiniCssExtractPlugin({
+            filename: "app.min.css"
+        })
+    ],
+    optimization: {
+        minimizer: [
+            // enable the js minification plugin
+            new TerserJSPlugin({
+                parallel: true
+            }),
+            // enable the css minification plugin
+            new OptimizeCSSAssetsPlugin({})
+        ]
+    }
+};

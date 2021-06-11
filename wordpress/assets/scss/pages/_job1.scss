@@ -1,0 +1,172 @@
+#job1 {
+  .description {
+    display: flex;
+    flex-direction: row;
+
+    &__text {
+        display: block;
+        border-left: 3px solid $primary-color;
+        max-width: 968px;
+        line-height: 26px;
+        padding-left: 46.5px;
+    }
+  }
+
+  .text-header{
+    padding-bottom: 50px;
+  }
+
+  .recruitment-flow {
+    background-color: $primary-color;
+    color: white;
+    height: 270px;
+    width: 65px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    position: relative;
+
+    &__content{
+      position: absolute;
+      top: 50%;
+      writing-mode: vertical-rl;
+      transform: translateY(-50%);
+    }
+  }
+
+  .arrow-flow {
+    font-size:50px; 
+    color: $primary-color; 
+    display: inline-block; 
+    height: 10px; 
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+  }
+
+  .introduction-image {
+    width: 97.5%;
+    height: auto;
+  }
+
+  .recruit-info {
+    margin-top: 100px;
+    &__title{
+      line-height: 26px;
+      border-bottom: 1px solid #dee2e6;
+      max-width: 185px;
+      padding: 20px 0 0 0;
+    }
+    &__item{
+      line-height: 26px;
+      border-bottom: 1px solid #dee2e6;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__sub-title{
+      max-width: 90px;
+    }
+  }
+
+  .button-line {
+    display: inline-block;
+  }
+
+  .text-heading{
+    margin-top: 100px;
+  }
+
+  .person-point {
+    list-style: decimal;
+    padding-left: 18px;
+  }
+
+  .recruitment-selection {
+    list-style: none;
+    padding-left: 0;
+
+      li {
+        padding-left: 30px;
+        position: relative;
+      }
+  }
+
+  .recruitment-selection li:before {
+    content: "ー";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @include mqdown(md) {
+    .introduction-image {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .text-header{
+      padding-bottom: 30px;
+    }
+
+    .section-title{
+      margin: 0;
+    }
+
+    .recruit-info {
+      &__title{
+        max-width: 25%;
+      }
+      &__item{
+        max-width: 75%;
+      }
+
+      &__sub-title{
+        max-width: 20%;
+      }
+      &__sub-item{
+        max-width: 80%;
+      }
+    }
+  }
+
+  @include mqdown(sm) {
+    .arrow-flow{
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 35px;
+      height: 15px;
+    }
+
+    .description {
+      margin-top: 0 !important;
+      &__text {
+        width: 100%;
+        padding: 5px 5px 10px 15px;
+        height: auto;
+      }
+    }
+
+    .button-line {
+      margin-top: 15px;
+      max-width: 180px;
+      display: block;
+    }
+
+    .recruitment-flow {
+      height: 155px;
+      width: 40px;
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .recruitment-flow {
+      &__content{
+        width: 50%;
+        right: 25%;
+      }
+    }
+  }
+}

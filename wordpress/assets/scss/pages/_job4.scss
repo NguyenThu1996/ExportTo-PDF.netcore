@@ -1,0 +1,79 @@
+.list-album {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 0;
+    margin-right: 0;
+
+    .layout-album {
+        margin-bottom: 79px;
+        &__content {
+            color: white;
+            .content-title {
+                width: 100%;
+                height: auto;
+                min-height: 50px;
+                background-color: $primary-color;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                padding-left: 1rem;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                word-break: keep-all;
+            }
+
+            .content-image{
+                width: 100%;
+                height: auto;
+            }
+
+            .content-image-print{
+                display: none;
+            }
+        }
+        &__intro {
+            line-height: 26px;
+            color: black;
+        }
+    }
+
+    .item-album-right {
+        padding-right: 0;
+        padding-left: 25px;
+    }
+
+    .item-album-left {
+        padding-right: 25px;
+        padding-left: 0;
+    }
+
+    @include mqdown(md) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .layout-album {
+            &__content {
+                .content-title {
+                    font-size: 14px;
+                    height: auto;
+                    min-height: 35px;
+                }
+
+                .content-image{
+                    width: 100%;
+                    height: auto;
+                    max-height: 100%;
+                }
+            }
+            margin-bottom: 50px;
+        }
+
+        .item-album-right {
+            padding-left: 0;
+        }
+
+        .item-album-left {
+            padding-right: 0;
+        }
+    }
+}

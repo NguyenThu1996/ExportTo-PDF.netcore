@@ -1,0 +1,46 @@
+dl.dlList {
+    padding: 16px 0 0 0;
+    dt {
+        line-height: 1.6;
+        float: left;
+        width: 10px;
+        text-align: left;
+    }
+    dd {
+        line-height: 1.6;
+	word-break: break-all;
+    }
+}
+h4 {
+    span {
+        display: block;
+        line-height: 1.5rem;
+        border-left: solid 2px$primary-color;
+        padding: 0 0 0 15px;
+        color: black;
+    }
+}
+ol {
+    li {
+        color: black !important;
+        list-style: none;
+        display: inline;
+        a {
+            color: black !important;
+        }
+    }
+}
+.line-height-1dot5rem {
+    line-height: 1.5rem;
+}
+.border-none {
+    border: none !important;
+}
+
+.border-right-2 {
+    border-right: 2px solid #FFFFFF;
+}
+
+.border-bottom-2 {
+    border-bottom: 2px solid #FFFFFF;
+}

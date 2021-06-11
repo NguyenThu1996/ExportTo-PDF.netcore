@@ -1,0 +1,45 @@
+.info {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 10%;
+ 
+  .tahara-new{
+    .date-time{
+      color:#2E8CCF;
+    }
+    a{
+       color: $text-color;
+       text-decoration: underline !important;
+    }
+    a:hover{
+      text-decoration: none !important;
+   }
+    img{
+      width:20px;
+      height:21px;
+    }
+  }  
+  .info-tile {
+    a{
+      color: $text-color;
+    }
+    a:hover{
+      border-bottom: solid 1px $text-color;
+    }
+  }
+
+}
+
+@include mqdown('lg') {
+  .info {
+    margin-left: 10px;
+    margin-right: 10px;
+    span {
+      font-size: 14px;
+    }
+    .text {
+      font-size: 14px;
+    }
+  }
+}
+

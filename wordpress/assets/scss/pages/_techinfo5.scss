@@ -1,0 +1,43 @@
+.techinfo5-content {
+    margin-top: 50px;
+    margin-bottom: 200px;
+
+    .thumb-image {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        display: block;
+    }
+
+    &__item-title{
+        margin-bottom: 30px;
+        padding-left: 15px;
+    }
+
+    &__item-intro{
+        margin-bottom: 50px;
+    }
+
+    @include mqdown(md) {
+        margin-top: 35px;
+        .thumb-image {
+            width: 100%;
+            max-width: 173px;
+            margin-bottom: 30px;
+            display: inline;
+        }
+
+        &__item-intro{
+            .description-text {
+                line-height: 23px;
+            }
+        }
+    }
+
+    @include mqdown(sm) {
+        .thumb-image-double{
+            width: 49%;
+            max-width: 180px;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.section-title {
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    * {
+        z-index: 3;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.55);
+        z-index: 2;
+    }
+
+    &__text1 {
+        color: $primary-color;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    &__text2 {
+        font-size: 35px;
+        letter-spacing: 0.05em;
+        line-height: 58px;
+        font-weight: 600;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    &__line {
+        position: absolute;
+        height: 3px;
+        background: $primary-color;
+        bottom: 0;
+        left: calc(50% - 50px);
+        width: 100px;
+    }
+
+    @include mq("xxl") {
+        padding-left: $paddingLg;
+        padding-right: $paddingLg;
+    }
+
+    @include mqdown("xxl") {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @include mqdown("lg") {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &__text1 {
+            font-size: 12px;
+        }
+
+        &__text2 {
+            font-size: 28px;
+            line-height: 1.4;
+            padding: 0;
+        }
+    }
+}

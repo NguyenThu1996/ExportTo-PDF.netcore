@@ -1,0 +1,224 @@
+.description {
+    line-height: 20px;
+    margin-top: 70px;
+}
+
+.wpcf7-response-output {
+    margin: 1em 0 !important;
+    border: none !important;
+
+    &::before {
+        content: "※";
+        padding-right: 5px;
+    }
+}
+
+.wpcf7-form.invalid .wpcf7-response-output,  .wpcf7-form.failed .wpcf7-response-output  {
+    color: $red-color;
+    padding-left: 0 !important;
+}
+
+.wpcf7-form.sent .wpcf7-response-output {
+    color: #155724;
+    background-color: #d4edda;
+    padding: .75rem 1.25rem;
+}
+
+.wpcf7-not-valid-tip {
+    color: $red-color;
+}
+
+.contact-form {
+    margin-top: 45px;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid #e3e3e3;
+
+        &--last {
+            border-bottom: 1px solid #e3e3e3;
+        }
+    }
+
+    &__label-group {
+        width: 25%;
+        background-color: #f2f2f2;
+        padding: 15px 20px;
+
+        &--center {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        &-text {
+            flex: 1;
+            line-height: 20px;
+            margin-right: 2px;
+        }
+
+        &-required {
+            background-color: $red-color;
+            color: $white-color;
+            font-size: 11px;
+            padding: 4px 10px;
+            line-height: 15px;
+            height: 17px;
+            min-width: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__input-group {
+        flex: 1 0 auto;
+        padding: 20px 30px;
+    }
+
+    &__input {
+        height: 34px;
+        padding: 6px 10px;
+        line-height: 20px;
+        border: 1px solid #5a5959;
+        border-radius: 3px;
+        width: 100%;
+
+        &--md {
+            width: 60%;
+        }
+
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #cbcbcb;
+            opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #cbcbcb;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #cbcbcb;
+        }
+    }
+
+    &__input-radio .wpcf7-list-item {
+        display: block;
+        margin: 0;
+    }
+
+    &__input-radio .wpcf7-list-item.first {
+        display: none;
+    }
+
+    &__textarea {
+        min-height: 180px;
+    }
+
+    &__note {
+        margin-top: 8px;
+    }
+
+    &__submit {
+        margin-top: 50px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: center;
+
+        .button-primary {
+            font-size: 20px;
+            line-height: 27px;
+            padding: 25px 100px;
+        }
+    }
+}
+
+@include mqdown("lg") {
+    .contact-form {
+        &__row {
+            flex-direction: column;
+
+            &--last {
+                border-bottom: none;
+            }
+        }
+
+        &__label-group {
+            width: 100%;
+            flex: 1 0 auto;
+        }
+
+        &__label {
+            &-text {
+                flex: none;
+                margin-right: 20px;
+            }
+        }
+
+        &__input {
+            &--md {
+                width: 100%;
+            }
+        }
+
+        &__note,
+        &__input-radio {
+            margin-left: 20px;
+        }
+
+        &__input-radio .wpcf7-not-valid-tip {
+            margin-left: -20px;
+        }
+
+        &__submit {
+            .button-primary {
+                padding: 25px 40px;
+            }
+        }
+    }
+}
+
+@include mqdown() {
+    .description {
+        line-height: 19px;
+        margin-top: 40px;
+    }
+
+    .contact-form {
+        &__input-group {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__submit {
+            .button-primary {
+                width: 100%;
+            }
+
+            .ajax-loader {
+                width: 0 !important;
+            }
+        }
+
+        &__textarea {
+            min-height: 160px;
+        }
+
+        &__row--last &__input-group {
+            padding-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.techinfo4-content {
+    margin-top: 50px;
+    margin-bottom: 200px;
+
+    .thumb-image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__item-title{
+        margin-bottom: 30px;
+        padding-left: 15px;
+    }
+
+    &__item-intro{
+        margin-bottom: 50px;
+
+        .description-text-sp {
+            br:nth-child(2){
+                display: none;
+            }
+        }
+    }
+
+    @include mqdown(md) {
+        margin-top: 35px;
+        .thumb-image {
+            width: 100%;
+            max-width: 173px;
+            margin-bottom: 30px;
+        }
+
+        &__item-intro{
+            .description-text {
+                line-height: 23px;
+            }
+
+            .description-text-sp {
+                text-align: center;
+
+                br:nth-child(2){
+                    display: block;
+                }
+            }
+        }
+    }
+}

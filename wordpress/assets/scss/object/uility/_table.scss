@@ -1,0 +1,16 @@
+.text-center-table-first-column {
+    tbody {
+        tr {
+            font-size: 1rem;
+            letter-spacing: 1px;
+            th {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            td {
+                line-height: 1.5em;
+            }
+        }
+    }
+}
