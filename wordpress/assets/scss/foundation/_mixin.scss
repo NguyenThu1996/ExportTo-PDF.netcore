@@ -133,12 +133,12 @@ $breakpoint-down: (
 			}
 			>a.nav-link {
 				&::after {
-					content: url('/assets/images/common/icon-chevron-right.svg');
+					// content: url('/assets/images/common/icon-chevron-right.svg');
 					margin-left: 15px;
 					font-size: 1px;
 				}
 				&::before {
-					content: url('/assets/images/common/icon-mail.svg');
+					// content: url('/assets/images/common/icon-mail.svg');
 					margin-right: 15px;
 					font-size: 1px;
 				}

@@ -57,7 +57,7 @@
                 &__mail-icon {
                     width: 17.7px;
                     height: 14px;
-                    background-image: url("/assets/images/common/mail.png");
+                    // background-image: url("/assets/images/common/mail.png");
                     background-size: contain;
                     background-repeat: no-repeat;
                 }
@@ -65,7 +65,7 @@
                 &__arrow-right-icon {
                     width: 7px;
                     height: 9px;
-                    background-image: url("/assets/images/common/arrow-right-2.png");
+                    // background-image: url("/assets/images/common/arrow-right-2.png");
                     background-size: contain;
                     background-repeat: no-repeat;
                 }
@@ -241,7 +241,7 @@
                     &::after {
                         content: "";
                         display: inline-block;
-                        background-image: url("/assets/images/common/arrow-down-blue-2.png");
+                        // background-image: url("/assets/images/common/arrow-down-blue-2.png");
                         width: 11px;
                         height: 7px;
                         background-size: cover;
@@ -421,7 +421,7 @@
                             display: inline-block;
                             width: 18px;
                             height: 10px;
-                            background-image: url("/assets/images/common/arrow-down-blue.png");
+                            // background-image: url("/assets/images/common/arrow-down-blue.png");
                             background-size: cover;
                             background-repeat: no-repeat;
                             position: absolute;

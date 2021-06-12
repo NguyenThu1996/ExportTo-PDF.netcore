@@ -20,93 +20,93 @@
         $template = get_query_var('pagename');
         $title = "";
         $keyword = "";
-        $description = "The electric blow molding machine and the electric multi-layer molding machine of Tahara are appreciated in the world.";
+        $description = "The electric blow molding machine and the electric multi-layer molding machine of  are appreciated in the world.";
         
         switch($template){
             case 'en':
-                $title = "TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Environment-friendly manufacturing";
+                $title = "｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Environment-friendly manufacturing";
             break;
             case 'info':
-                $title = "What&#039;s New｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,What&#039;s New";
+                $title = "What&#039;s New｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,What&#039;s New";
             break;
             case 'products1':
-                $title = "Fully electric blow molding machine by USE｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Fully electric blow molding machine by USE";
+                $title = "Fully electric blow molding machine by USE｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Fully electric blow molding machine by USE";
             break;
             case 'products2':
-                $title = "Fully electric blow molding machine by CAPACITY｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Fully electric blow molding machine by CAPACITY";
+                $title = "Fully electric blow molding machine by CAPACITY｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Fully electric blow molding machine by CAPACITY";
             break;
             case 'products3':
-                $title = "Auxiliary｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Auxiliary";
+                $title = "Auxiliary｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Auxiliary";
             break;
             case 'techinfo1':
-                $title = "Direct Blow Molding｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Direct Blow Molding";
+                $title = "Direct Blow Molding｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Direct Blow Molding";
             break;
             case 'techinfo2':
-                $title = "Case study｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Case study";
+                $title = "Case study｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Case study";
             break;
             case 'techinfo3':
-                $title = "Testing Facility｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Testing Facility";
+                $title = "Testing Facility｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Testing Facility";
             break;
             case 'techinfo4':
-                $title = "Customer Support｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Customer Support";
+                $title = "Customer Support｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Customer Support";
             break;
             case 'techinfo5':
-                $title = "Our Specialty｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Our Specialty";
+                $title = "Our Specialty｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Our Specialty";
             break;
             case 'techinfo6':
-                $title = "Advantage of Our All-Electric Blow Molding Machine｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Advantage of Our All-Electric Blow Molding Machine";
+                $title = "Advantage of Our All-Electric Blow Molding Machine｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Advantage of Our All-Electric Blow Molding Machine";
             break;
             case 'techinfo7':
-                $title = "TAHARA News｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,News,TAHARA News";
+                $title = " News｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,News, News";
             break;
             case 'about1':
-                $title = "Message from the President｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Message from the President";
+                $title = "Message from the President｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Message from the President";
             break;
             case 'about2':
-                $title = "Corporate Profile｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Profile";
+                $title = "Corporate Profile｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Profile";
             break;
             case 'about3':
-                $title = "History｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,History";
+                $title = "History｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,History";
             break;
             case 'sales':
-                $title = "From Procurement Department｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,From Procurement Department";
+                $title = "From Procurement Department｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,From Procurement Department";
             break;
             case 'contact':
-                $title = "Inquiry｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Contact";
+                $title = "Inquiry｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Contact";
             break;
             case 'sitepolicy':
-                $title = "Terms of Use｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Policy,Terms of Use";
+                $title = "Terms of Use｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Policy,Terms of Use";
             break;
             case 'privacypolicy':
-                $title = "Privacy policy｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,Policy";
+                $title = "Privacy policy｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,Policy";
             break;
             default:
                 if($post_type == 'info'){
-                    $title = "What&#039;s New｜TAHARA｜The World Leader of Electric Extrusion Blow Molding Machine";
-                    $keyword = "TAHARA,Electric Blow Molding Machine,Multi-layer Molding Machine,What&#039;s New";
+                    $title = "What&#039;s New｜｜The World Leader of Electric Extrusion Blow Molding Machine";
+                    $keyword = ",Electric Blow Molding Machine,Multi-layer Molding Machine,What&#039;s New";
                 } else {
-                    $title = "404 Not Found｜株式会社タハラ「TAHARA」｜電動ブロー成形機のトップメーカー";
+                    $title = "404 Not Found｜株式会社タハラ「」｜電動ブロー成形機のトップメーカー";
                     $description = "タハラは電動ブロー成形機のトップメーカー。細かい要望に対応する電動ブロー成形機は国内外で高く評価されています。多層成形機は生産200台を突破。タハラの技術を駆使した多層成形機はアジアから中南米までグローバルに展開しています。";
-                    $keyword = "タハラ,TAHARA,電動ブロー成形機,多層成形機,地球に優しいものづくり";
+                    $keyword = "タハラ,,電動ブロー成形機,多層成形機,地球に優しいものづくり";
                 }
         }
     ?>

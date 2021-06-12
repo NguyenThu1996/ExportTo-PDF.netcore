@@ -44,7 +44,7 @@ define( 'THEME_DIST_URI', THEME_ASSETS_URI . '/dist' );
 
 
 // == i18n ==
-define( 'THEME_TEXT_DOMAIN', 'tahara-mc' );
+define( 'THEME_TEXT_DOMAIN', 'thunv' );
 
 // languages
 define( 'THEME_DEFAULT_LANGUAGE', 'jp' );

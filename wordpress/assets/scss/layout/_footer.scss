@@ -5,7 +5,7 @@
         display: inline-block;
         height: 11px;
         width: 8px;
-        background-image: url("/assets/images/common/arrow-right.png");
+        // background-image: url("/assets/images/common/arrow-right.png");
         background-size: cover;
         background-repeat: no-repeat;
         left: 0;
@@ -153,13 +153,13 @@
                 &__icon.pdf {
                     width: 26px;
                     height: 25px;
-                    background-image: url("/assets/images/common/ic-pdf.png");
+                    // background-image: url("/assets/images/common/ic-pdf.png");
                 }
 
                 &__icon.arrow-right {
                     width: 9px;
                     height: 16px;
-                    background-image: url("/assets/images/common/button-arrow-right.png");
+                    // background-image: url("/assets/images/common/button-arrow-right.png");
                 }
             }
 
@@ -284,7 +284,7 @@
             width: 62px;
             height: 62px;
             transform: translate(0, -65%);
-            background-image: url("/assets/images/common/footer-mail.png");
+            // background-image: url("/assets/images/common/footer-mail.png");
             background-size: cover;
             background-repeat: no-repeat;
         }

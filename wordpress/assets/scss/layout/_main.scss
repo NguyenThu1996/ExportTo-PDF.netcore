@@ -73,7 +73,7 @@ a {
     display: block;
     width: 41px;
     height: 41px;
-    background: url("/assets/images/common/pageTop.png") no-repeat 0 0;
+    // background: url("/assets/images/common/pageTop.png") no-repeat 0 0;
     opacity: 0.7;
     -moz-opacity: 0.7;
     filter: alpha(opacity=70);
@@ -94,7 +94,7 @@ a {
     display: block;
     width: 62px;
     height: 62px;
-    background-image: url("/assets/images/common/footer-mail.png");
+    // background-image: url("/assets/images/common/footer-mail.png");
     cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ a {
 .available-scroll {
     display: none;
     position: absolute;
-    background-image: url('../images/common/available_scroll.png');
+    // background-image: url('../images/common/available_scroll.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 104px;

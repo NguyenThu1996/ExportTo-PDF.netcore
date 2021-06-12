@@ -224,7 +224,7 @@ get_header('ch');
                     <a href="<?php echo home_url('/ch/techinfo5')?>">
                         <div class="gallery__image-block">
                             <img class="lazy" data-src="<?php echo THEME_IMG_URI . '/top-page/pickup2-ch-sm.png' ?>" alt="Cinque Terre" >
-                            <span class="gallery__text">TAHARA 公司的优势</span>
+                            <span class="gallery__text"> 公司的优势</span>
                         </div>
                         <div>
                             <button class="btn-view button-line-view">
@@ -292,7 +292,7 @@ get_header('ch');
                     <a href="<?php echo home_url('/ch/techinfo5')?>">
                         <div class="gallery__image-block">
                             <img class="lazy" data-src="<?php echo THEME_IMG_URI . '/top-page/pickup2-ch.jpg' ?>" alt="Cinque Terre" >
-                            <span class="gallery__text">TAHARA 公司的优势</span>
+                            <span class="gallery__text"> 公司的优势</span>
                         </div>
                         <div>
                             <button class="btn-view button-line-view">

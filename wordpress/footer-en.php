@@ -67,7 +67,7 @@
                 ?>
             </div>
         </div>
-        <div class="copyright">COPYRIGHT © TAHARA MACHINERY　LTD., ALL RIGHTS RESERVED.</div>
+        <div class="copyright">COPYRIGHT ©  MACHINERY　LTD., ALL RIGHTS RESERVED.</div>
     </footer>
     <script>
         var adminAjaxUrl = '<?php echo admin_url('admin-ajax.php'); ?>';
